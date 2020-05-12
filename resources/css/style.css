@@ -15,6 +15,15 @@ html{
     text-rendering: optimizeLegibility;
     
 }
+
+.clearfix{zoom: 1}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
 /*------------------------------------------------*/
 /*COMPONENTES REUTILIZÁVEIS*/
 /*------------------------------------------------*/
@@ -64,7 +73,7 @@ h2:after{
     background-color: #e67e22;
     content: " ";
     width: 100px;
-    margin: 30px auto 0px;
+    margin: 30px auto;
 }
  h3{
      font-size: 100%;
@@ -223,4 +232,54 @@ header{
     opacity: 1;
     transform: scale(1.03);
     transition: transform 0.5s, opacity 0.5s;
+}
+
+/*------------------------------------------------*/
+/*COMO FUNCIONA*/
+/*------------------------------------------------*/
+.section-steps{
+    padding-top: 30px;
+    background-color: #f4f4f4;
+}
+
+.steps-box:first-child{
+    padding-right: 3%;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-steps{
+    margin-bottom: 50px;
+}
+
+.works-steps:last-of-type{
+    margin-bottom: 80px;
+}
+
+.works-steps div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
