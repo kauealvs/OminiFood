@@ -113,6 +113,7 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box{
@@ -162,7 +163,8 @@ header{
 /*------------------------------------------------*/
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -172,7 +174,8 @@ header{
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     background-color: #e67e22;
     border: 1px solid  #e67e22;
     color: #fff;
@@ -186,7 +189,9 @@ header{
 }
 
 .btn-full:hover,
-.btn-ghost:active{
+.btn-ghost:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     border: 1px solid  #bf6516;
     background-color: #bf6516;
 }
@@ -196,6 +201,28 @@ header{
     border: 1px solid  #bf6516;
     background-color: #bf6516;
     color: #fff;
+}
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+/*------------------------------------------------*/
+/*links*/
+/*------------------------------------------------*/
+a:link, 
+a:visited{
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid;
+    border-bottom-color: #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
 }
 
 /*------------------------------------------------*/
@@ -282,4 +309,249 @@ header{
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/*------------------------------------------------*/
+/*CIDADES*/
+/*------------------------------------------------*/
+.section-cities{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.box img{
+    height: 200px;
+    width: 260px;
+    margin-bottom: 15px;
+    border-radius: 5%;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    color:#e67e22 ;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/*------------------------------------------------*/
+/*comentários sobre nós*/
+/*------------------------------------------------*/
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/pizza.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+blockquote{
+    padding: 2%;
+    font-family: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+cite img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle; 
+}
+
+/*------------------------------------------------*/
+/*Planos*/
+/*------------------------------------------------*/
+
+.section-plans{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f4f4f4;
+}
+
+.plan-box{
+    margin-top: 30px;
+    background-color: white;
+    width: 90%;
+    border-radius: 5%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid rgb(231, 228, 228);
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+.plan-box:hover{
+
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+}
+
+/*------------------------------------------------*/
+/*fale conosco*/
+/*------------------------------------------------*/
+
+.section-form{
+    padding: 50px 0;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+/*------------------------------------------------*/
+/*footer*/
+/*------------------------------------------------*/
+
+footer{
+    background-color: #333;
+    padding: 50px;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-nav{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-nav li:last-child{
+    margin-right: 0;
+}
+
+footer p{
+    text-align: center;
+    color: #888;
+    font-size:80%;
+    margin-top: 30px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-nav li a:link,
+.social-nav li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.footer-nav li a:hover{
+    color: #e67e22;
+    transition: 0.5s;
+}
+
+.social-nav li a:link,
+.social-nav li a:visited{
+    font-size: 180%;
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+    transition: 0.5s;
+}
+
+.ion-social-twitter:hover{
+    color:#1da1f2;
+    transition: 0.5s;
+}
+
+.ion-social-instagram:hover{
+    color:  #c32aa3;
+    transition: 0.5s;
+}
+
+.ion-social-googleplus:hover{
+    color: #db4437;
+    transition: 0.5s;
 }
