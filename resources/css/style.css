@@ -132,6 +132,14 @@ header{
     margin-top: 20px;
 }
 
+.logo-black{
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 5px;
+}
+/*main nav*/
 .main-nav{
     float: right;
     list-style: none;
@@ -158,6 +166,29 @@ header{
     border-bottom: 2px solid #e67e22 ;
     padding: 8px 0px;
 }
+
+/*stick nav*/
+
+.stick{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.998);
+    box-shadow: 0 2px 2px rgb(230, 228, 228);
+    z-index: 9999;
+}
+
+.stick .main-nav li a:link,
+.stick .main-nav li a:visited{
+    padding: 15px 0;
+    color: #555;
+}
+
+.stick .logo{display: none;}
+.stick .logo-black{display: block;}
+
+.stick .main-nav{margin: 15px;}
 
 /*------------------------------------------------*/
 /*BOTÕES*/
